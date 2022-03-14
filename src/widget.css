@@ -1,12 +1,60 @@
-@media screen and (max-width:800px){
-    .rcw-widget-container{
-        height:70%;
-        margin:0;
-        max-width:none;
-        border-radius: 10px;
-        overflow: hidden;
-        width: unset;
-        bottom: 0;
-        margin:0 20px 20px 0;
+.rcw-launcher, .rcw-close-button, .rcw-conversation-container > .rcw-header {
+    background-color: #25548d;
+}
+.rcw-picker-btn {
+    display: none;
+}
+.rcw-header {
+    padding: 0px 0 15px;
+}
+.rcw-title {
+    padding: 5px 0;
+}
+.rcw-sender {
+    align-items: flex-center;
+}
+.rcw-new-message{
+    width: calc(100% - 10px);
+}
+
+
+@media screen and (max-width: 800px) {
+    .rcw-conversation-container .rcw-close-button {
+        background-color: #25548d;
     }
+}
+
+
+/** Estilos para el componente MessageHTML */
+.tcw-message {
+    margin: 10px;
+    display: flex;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.tcw-message-text {
+    background-color: #f4f7f9;
+    border-radius: 10px;
+    max-width: 285px;
+    padding: 15px;
+    text-align: left;
+}
+.tcw-message-client {
+    flex-direction: row-reverse;
+}
+.tcw-timestamp {
+    font-size: 10px;
+    margin-top: 5px;
+}
+.tcw-message-text p {
+    margin: 0;
+}
+.tcw-message-text img {
+    width: 100%;
+    object-fit: contain;
+}
+.tcw-response {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
